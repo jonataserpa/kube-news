@@ -1,6 +1,6 @@
 services:
   postgre:
-    image: postgre:13.13
+    image: postgres:13.13
     ports:
       - 5432:5432
     environment:
