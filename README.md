@@ -30,6 +30,9 @@ DB_HOST => Endereço do banco de dados.
 - kubectl port-forward service/kubenews 9005:80
 - k3d cluster delete meucluster
 
+- kubectl delete pod name-pod && watch 'kubectl get pod'
+- docker build -t jonataserpa/kube-news:v2 --push .
+
 ### Services
 
 Criação dos 2 services do Tipo ClientIP para expor o banco de dados na rede
