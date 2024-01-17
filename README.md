@@ -13,22 +13,22 @@ DB_HOST => Endereço do banco de dados.
 
 ### COMANDOS
 
-docker build -t kube-news -f Dockerfile .
-docker compose up -d --build
+- docker build -t kube-news -f Dockerfile .
+- docker compose up -d --build
 
-k3d cluster create meucluster --servers 3 --agents 3 -p "9005:30000@loadbalancer"
-docker container ls
-kubectl apply -f k8s/deployment.yaml
-kubectl get all
-kubectl get po
-kubectl get deploy
-kubectl get replicaset
-kubectl logs number do pod
-kubectl get service
-kubectl delete pod name-do-pod
-kubectl get po
-kubectl port-forward service/kubenews 9005:80
-k3d cluster delete meucluster
+- k3d cluster create meucluster --servers 3 --agents 3 -p "9005:30000@loadbalancer"
+- docker container ls
+- kubectl apply -f k8s/deployment.yaml
+- kubectl get all
+- kubectl get po
+- kubectl get deploy
+- kubectl get replicaset
+- kubectl logs number do pod
+- kubectl get service
+- kubectl delete pod name-do-pod
+- kubectl get po
+- kubectl port-forward service/kubenews 9005:80
+- k3d cluster delete meucluster
 
 ### Services
 
