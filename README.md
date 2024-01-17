@@ -29,9 +29,11 @@ DB_HOST => Endereço do banco de dados.
 - kubectl get po
 - kubectl port-forward service/kubenews 9005:80
 - k3d cluster delete meucluster
-
+- kubectl apply -f k8s/deployment.yaml && watch 'sudo kubectl get po'
 - kubectl delete pod name-pod && watch 'kubectl get pod'
 - docker build -t jonataserpa/kube-news:v2 --push .
+- kubectl rollout undo deployment kubenews && watch 'sudo kubectl get po'
+
 
 ### Services
 
